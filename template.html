@@ -1,0 +1,15 @@
+<style>
+    .cursor-hand {
+        cursor: hand;
+        cursor: pointer;
+    }
+</style>
+
+<div class="col-lg-2">
+    <input type="text" ng-model="text" class="form-control"/>
+    <div class="suggestions" ng-show="showSelection">
+        <ul class="list-group">
+            <li class="cursor-hand list-group-item" ng-repeat="val in vals" ng-click="select(val)">{{val}}</li>
+        </ul>
+    </div>
+</div>
